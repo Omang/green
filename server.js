@@ -26,6 +26,8 @@ app.use('/uploads', express.static(__dirname + "/uploads"));
 app.get('/', function(req, res){
     res.sendfile('weblab/index.html');
 });
-app.listen('8080', function(){
-    console.log("port running at port 8080");
+var port = process.env.PORT || 8080;
+
+app.listen(port, function(){
+    console.log("listerning for localhost at port" + port);
 });

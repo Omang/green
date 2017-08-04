@@ -1,6 +1,10 @@
 {
   "name": "TimeSucks",
   "version": "0.0.1",
+  "scripts": {
+    "prestart": "npm install",
+    "start": "node server.js"
+  },
   "dependencies": {
     "angular": "^1.5.8",
     "angular-chart.js": "^1.1.1",
@@ -27,5 +31,9 @@
     "path": "^0.12.7",
     "socket.io": "^1.7.2",
     "youtube-audio-stream": "0.0.31"
+  },
+  "engines": {
+    "node": "6.11.0",
+    "npm": "3.10.10"
   }
 }
